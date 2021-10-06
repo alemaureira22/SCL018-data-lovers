@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./data/imagenes/fondo3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100vw 100vh;
+    margin:0;
+    
+}
+
+.titleContainer{
+  background: #FBC505;
+  position: relative;
+  display:flex;
+  height: 90px;
+  justify-content: center;
+  flex-direction: row;
+    
+}
+
+img.imageLogoPoke, img.imageLogoGo{
+  margin-right:-55px;
+}
+
+img.imageLogoPoke{
+  width: 260px;
+  height: 120px;
+  margin-top: -15px;
+  margin-left: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+img.imageLogoGo{
+  width: 165px;
+  height: 65px;
+  margin-top: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+img.pikachu{
+  margin-left: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.welcomeIntroduccion{
+  display: flex;
+  position: relative;
+  height: 200px;
+    
+}
+
+.playPokemon{
+
+}
+
+.pokemonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  
+} 
+  /*caja contenedora de los pokemones*/
+  .pokemonBox {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  }
+  .box{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #EC3E18;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+  }
+
+  p.numberBox{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -50px;
+    width: 46px;
+    font-size: 13px;
+    color: white;     
+  }
+
+  img.picture{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    
+  }
+
+  .card-title{
+    width: 95px;
+    height: 20px;
+    font-size: 14px;
+    background: #4A0769;
+    border-radius: 20px;
+    margin-top: -15px;
+    text-align: center ;
+    padding-top: 2px;
+    color: white;
+      
+
+  }
+  footer{
+    position: relative;
+    bottom: 0;
+    width:100%;
+    background-color: #08073c;
+    color:white;
+    text-align: center;
+    height: 50px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 0.7em;
+    
+  }
+
+    
+
