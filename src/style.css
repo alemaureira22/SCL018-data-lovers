@@ -6,9 +6,7 @@ body{
     background-image: url("./data/imagenes/fondo3.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:100vw 100vh;
     margin:0;
-    
 }
 
 .titleContainer{
@@ -17,8 +15,7 @@ body{
   display:flex;
   height: 90px;
   justify-content: center;
-  flex-direction: row;
-    
+  flex-direction: row;    
 }
 
 img.imageLogoPoke, img.imageLogoGo{
@@ -49,18 +46,33 @@ img.pikachu{
   display: flex;
   position: relative;
   height: 200px;
-    
+  width: 1349px;
+  background-image: url("./data/imagenes/bannerazul2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.playPokemon{
+h2{
+  text-align: center;
+  height: 161px;
+  width: 995px;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: -40px;
+  margin-right: 100px;
+}
 
+img.playPokemon{
+  margin-left:130px;
 }
 
 .pokemonContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px;
+  
   
 } 
   /*caja contenedora de los pokemones*/
@@ -110,22 +122,21 @@ img.pikachu{
     text-align: center ;
     padding-top: 2px;
     color: white;
-      
-
   }
+
   footer{
-    position: relative;
-    bottom: 0;
-    width:100%;
-    background-color: #08073c;
+    background-color: #08073c77;
     color:white;
     text-align: center;
-    height: 50px;
+    justify-content: center;
+    height: 30px;
     font-family: 'Source Sans Pro';
     font-weight: 300;
     font-size: 0.7em;
-    
+    display: flex;
   }
+
+ 
 
     
 
