@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Pokemon go</title>
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no,initial-scale=1.0,maximu-scale=1,0,minimun-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximu-scale=1,0,minimun-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!--Este es nuestro logo-->
+  <!--Este es nuestro titulo-->
   <header class="titleContainer">
     <img class="imageLogoPoke" src="data/imagenes/nombrepokemon.png">
     <img class="imageLogoGo" src="data/imagenes/go.png">
@@ -19,11 +18,13 @@
   </header>
   <!--barra filtro-->
   <section class="nav">
+    <!--Ordenar por(sort by)-->
     <select class="tag" name="a-z" id="selectOrder">
       <option value="ordenado">Sort By</option>
       <option value="ascendente">A-Z</option>
       <option value="descendente">Z-A</option>
     </select>
+    <!--Ordenar por Elemento (Element)-->
     <select class="tag" name="type" id="typePokemon">
       <option value="all" selected>Element</option>
       <option value="Grass">Grass</option>
@@ -42,22 +43,21 @@
       <option value="Rock">Rock</option>
       <option value="Poison">Poison</option>
       <option value="Flying">Flying</option>
-      <option value="Ice">Ice</option>
-      
-
-
+      <option value="Ice">Ice</option> 
+      <!--Busqueda de poke por Nombre o numero-->
     </select>
     <input id="input-name-pokemon" class="tag" placeholder="Number or Name" value="" autocomplete="off">
+    <!--Link para la pagina oficial (con boton)-->
   </section>
   <!--Este es la Bienvenida + donde se visualizan a los pokemons-->
   <main id="pokemonContainer" class="pokemonContainer">
+    <!--Intro o bienvenida breve-->
     <article class="welcomeIntroduccion">
       <img class="playPokemon" src="data/imagenes/playpokemon.png">
-      <h2>Welcome to the pokedex <br>
+      <p class="intro">Welcome to the pokedex <br>
         In this page you can find information about your favorite <br> pokemon in the Kanto and Johto region.<br>
-        ¡We invite you to explore the wonders of the pokemon world!</h2>
+        ¡We invite you to explore the wonders of the pokemon world!</p>
     </article>
-
   </main>
 
   <footer>
