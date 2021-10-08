@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./data/imagenes/fondo3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+}
+
+.titleContainer{
+  background: #FBC505;
+  position: relative;
+  display:flex;
+  height: 90px;
+  justify-content: center;
+  flex-direction: row;    
+}
+
+img.imageLogoPoke, img.imageLogoGo{
+  margin-right:-55px;
+}
+
+img.imageLogoPoke{
+  width: 260px;
+  height: 120px;
+  margin-top: -15px;
+  margin-left: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+img.imageLogoGo{
+  width: 165px;
+  height: 65px;
+  margin-top: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+img.pikachu{
+  margin-left: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.welcomeIntroduccion{
+  display: flex;
+  position: relative;
+  height: 200px;
+  width: 1349px;
+  background-image: url("./data/imagenes/bannerazul2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2{
+  text-align: center;
+  height: 161px;
+  width: 995px;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: -40px;
+  margin-right: 100px;
+}
+
+img.playPokemon{
+  margin-left:130px;
+}
+
+.pokemonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+} 
+  /*caja contenedora de los pokemones*/
+  .pokemonBox {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  }
+  .box{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #EC3E18;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+  }
+
+  p.numberBox{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -50px;
+    width: 46px;
+    font-size: 13px;
+    color: white;     
+  }
+
+  img.picture{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    
+  }
+
+  .card-title{
+    width: 95px;
+    height: 20px;
+    font-size: 14px;
+    background: #4A0769;
+    border-radius: 20px;
+    margin-top: -15px;
+    text-align: center ;
+    padding-top: 2px;
+    color: white;
+  }
+
+  footer{
+    background-color: #08073c77;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 0.7em;
+    display: flex;
+  }
+
+ 
+
+    
+
