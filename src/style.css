@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin:0;
+    font-family: 'Acme', sans-serif;
 }
 
 .titleContainer{
@@ -40,6 +41,27 @@ img.imageLogoGo{
 img.pikachu{
   margin-left: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav{
+  flex:1 1 auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  
+  } 
+
+.tag{
+    background: #ec3e18;
+    color: white;
+    font-size: 20px;
+    padding:0 10px;
+    letter-spacing: 1px;
+    text-decoration: none;  
+    font-family: 'Acme', sans-serif;
+}
+
+.tag:hover{
+  color: #5e5e5d;
 }
 
 .welcomeIntroduccion{
@@ -85,10 +107,10 @@ img.playPokemon{
     
   }
   .box{
-    width: 120px;
-    height: 120px;
-    border: 5px solid #EC3E18;
-    border-radius: 20px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-radius: 5px;
+    height: 150px;
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -98,28 +120,27 @@ img.playPokemon{
 
   p.numberBox{
     position: absolute;
-    margin-top: -80px;
-    margin-left: -50px;
+    margin-bottom: -115px;
+    margin-left: -95px;
     width: 46px;
     font-size: 13px;
-    color: white;     
+    color: rgb(196, 190, 190);     
   }
 
   img.picture{
     display: flex;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: px;
     
   }
 
   .card-title{
     width: 95px;
     height: 20px;
-    font-size: 14px;
-    background: #4A0769;
+    font-size: 20px;
     border-radius: 20px;
     margin-top: -15px;
-    text-align: center ;
+    margin-left: -45px;
     padding-top: 2px;
     color: white;
   }
@@ -130,7 +151,6 @@ img.playPokemon{
     text-align: center;
     justify-content: center;
     height: 30px;
-    font-family: 'Source Sans Pro';
     font-weight: 300;
     font-size: 0.7em;
     display: flex;

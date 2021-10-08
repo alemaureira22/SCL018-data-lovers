@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pokemon go</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--Este es nuestro logo + filtro-->
-    <header class="titleContainer">
-      <img class="imageLogoPoke" src="data/imagenes/nombrepokemon.png">
-      <img class="imageLogoGo" src="data/imagenes/go.png">
-      <img class="pikachu" src="data/imagenes/pikachu.png">
-    </header>
-    <!--Este es la Bienvenida + donde se visualizan a los pokemons-->
-    <main id= "pokemonContainer" class="pokemonContainer">
-      <article class="welcomeIntroduccion">
-        <img class="playPokemon"src="data/imagenes/playpokemon.png">
-        <h2>Welcome to the pokedex <br>
-          In this page you can find information about your favorite <br> pokemon in the Kanto and Johto region.<br> 
-          ¡We invite you to explore the wonders of the pokemon world!</h2>
-      </article>
-     
-    </main>
 
-    <footer>
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon go</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no,initial-scale=1.0,maximu-scale=1,0,minimun-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Este es nuestro logo-->
+  <header class="titleContainer">
+    <img class="imageLogoPoke" src="data/imagenes/nombrepokemon.png">
+    <img class="imageLogoGo" src="data/imagenes/go.png">
+    <img class="pikachu" src="data/imagenes/pikachu.png">
+  </header>
+  <!--barra filtro-->
+  <section class="nav">
+    <select class="tag" name="a-z" id="selectOrder">
+      <option value="ordenado">Sort By</option>
+      <option value="ascendente">A-Z</option>
+      <option value="descendente">Z-A</option>
+    </select>
+    <select class="tag" name="type" id="typePokemon">
+      <option value="all" selected>Element</option>
+      <option value="Grass">Grass</option>
+      <option value="Electric">Electric</option>
+      <option value="Dark">Dark</option>
+      <option value="Fairy">Fairy</option>
+      <option value="Fire">Fire</option>
+      <option value="Psychic">Psychic</option>
+      <option value="Steel">Steel</option>
+      <option value="Dragon">Dragon</option>
+      <option value="Water">Water</option>
+      <option value="Fighting">Fighting</option>
+      <option value="Ground">Ground</option>
+      <option value="Ghost">Ghost</option>
+      <option value="Bug">Bug</option>
+      <option value="Rock">Rock</option>
+      <option value="Poison">Poison</option>
+      <option value="Flying">Flying</option>
+      <option value="Ice">Ice</option>
+      
+
+
+    </select>
+    <input id="input-name-pokemon" class="tag" placeholder="Number or Name" value="" autocomplete="off">
+  </section>
+  <!--Este es la Bienvenida + donde se visualizan a los pokemons-->
+  <main id="pokemonContainer" class="pokemonContainer">
+    <article class="welcomeIntroduccion">
+      <img class="playPokemon" src="data/imagenes/playpokemon.png">
+      <h2>Welcome to the pokedex <br>
+        In this page you can find information about your favorite <br> pokemon in the Kanto and Johto region.<br>
+        ¡We invite you to explore the wonders of the pokemon world!</h2>
+    </article>
+
+  </main>
+
+  <footer>
     <p class="foo"> @2021 Pokemon.Desarrollado por Macarena Rivera y Alejandra Maureira</p>
-    </footer>
+  </footer>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
