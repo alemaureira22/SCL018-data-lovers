@@ -1,44 +1,36 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url("./data/imagenes/fondo3.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin:0;
-    font-family: 'Acme', sans-serif;
 }
 
-.titleContainer{
-  background: #FBC505;
+.titleContainer {
+  background: #fbc505;
   position: relative;
-  display:flex;
-  height: 90px;
+  display: flex;
+  height: 14.4vh;
   justify-content: center;
-  flex-direction: row;    
 }
 
-img.imageLogoPoke, img.imageLogoGo{
-  margin-right:-55px;
+img.imageLogoPoke,
+img.imageLogoGo {
+  margin-right: -48px;
 }
 
-img.imageLogoPoke{
-  width: 260px;
-  height: 120px;
+img.imageLogoPoke {
+  height: 19.2vh;
   margin-top: -15px;
   margin-left: 100px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-img.imageLogoGo{
-  width: 165px;
-  height: 65px;
+img.imageLogoGo {
+  height: 10.4vh;
   margin-top: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-img.pikachu{
+img.pikachu {
   margin-left: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -64,99 +56,182 @@ img.pikachu{
   color: #5e5e5d;
 }
 
-.welcomeIntroduccion{
+.nav {
+  height: 4.8vh;
   display: flex;
+  justify-content: center;
+}
+
+.tag {
+  display: flex;
+  background: #ec3e18;
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Acme", sans-serif;
+}
+
+.tag:hover {
+  color: #5e5e5d;
+}
+
+.welcomeIntroduccion {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
   position: relative;
-  height: 200px;
-  width: 1349px;
+  height: 32vh;
+  width: 100%;
   background-image: url("./data/imagenes/bannerazul2.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-h2{
+p.intro {
   text-align: center;
-  height: 161px;
-  width: 995px;
+  height: 25.76vh;
   color: white;
   font-size: 20px;
   margin-top: 50px;
-  margin-left: -40px;
   margin-right: 100px;
 }
 
-img.playPokemon{
-  margin-left:130px;
+img.playPokemon {
+  margin-left: 10px;
 }
 
-.pokemonContainer{
+.pokemonContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-  
-} 
-  /*caja contenedora de los pokemones*/
-  .pokemonBox {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    
+}
+
+.pokemonBox {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.055);
+  border-radius: 5px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.numberBox {
+  position: absolute;
+  margin-bottom: -115px;
+  margin-left: -95px;
+  width: 46px;
+  font-size: 13px;
+  color: rgb(196, 190, 190);
+}
+
+img.picture {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-title {
+  width: 95px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: -15px;
+  margin-left: -45px;
+  padding-top: 2px;
+  color: white;
+}
+
+footer {
+  background-color: #08073c77;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  height: 30px;
+  font-weight: 300;
+  font-size: 0.7em;
+  display: flex;
+}
+
+@media screen and (max-width: 870px) {
+  p.intro {
+    font-size: 18px;
+    margin-top: 20px;
   }
-  .box{
-    width: 150px;
-    background-color: rgba(255, 255, 255, 0.055);
-    border-radius: 5px;
-    height: 150px;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
+}
+
+@media screen and (max-width: 691px) {
+  .titleContainer,
+  .nav,
+  .pokemonContainer,
+  footer {
+    width: 100%;
   }
 
-  p.numberBox{
-    position: absolute;
-    margin-bottom: -115px;
-    margin-left: -95px;
-    width: 46px;
-    font-size: 13px;
-    color: rgb(196, 190, 190);     
-  }
-
-  img.picture{
-    display: flex;
-    width: 100px;
-    height: px;
-    
-  }
-
-  .card-title{
-    width: 95px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 20px;
-    margin-top: -15px;
-    margin-left: -45px;
-    padding-top: 2px;
-    color: white;
-  }
-
-  footer{
-    background-color: #08073c77;
-    color:white;
+  p.intro {
+    font-size: 18px;
+    margin-top: 20px;
     text-align: center;
-    justify-content: center;
-    height: 30px;
-    font-weight: 300;
-    font-size: 0.7em;
-    display: flex;
+  }
+  img.playPokemon {
+    display: none;
+  }
+  img.imageLogoGo {
+    display: none;
   }
 
- 
+  .nav {
+    display: inline-block;
+    justify-content: center;
+  }
+}
 
-    
+@media screen and (max-width: 590px) {
+  body {
+    overflow-x: hidden;
+  }
 
+  .welcomeIntroduccion {
+    height: 28vh;
+    width: 100%;
+  }
+
+  p.intro {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-right: -20px;
+  }
+
+  .tag {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+
+  p.numberBox {
+    margin-bottom: -100px;
+    margin-left: -75px;
+    width: 36px;
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    margin-left: -25px;
+  }
+}
