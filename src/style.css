@@ -1,8 +1,15 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-image: url("./data/imagenes/fondo3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Acme", sans-serif;
+  width: 100%;
 }
+
 
 .titleContainer {
   background: #fbc505;
