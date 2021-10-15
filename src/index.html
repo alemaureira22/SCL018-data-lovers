@@ -2,69 +2,76 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Pokemon go</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximu-scale=1,0,minimun-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no,initial-scale=1.0,maximu-scale=1,0,minimun-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!--Este es nuestro titulo-->
   <header class="titleContainer">
-    <img class="imageLogoPoke" src="data/imagenes/nombrepokemon.png">
-    <img class="imageLogoGo" src="data/imagenes/go.png">
-    <img class="pikachu" src="data/imagenes/pikachu.png">
+    <img class="imageLogoPoke" src="data/imagenes/nombrepokemon.png" />
+    <img class="imageLogoGo" src="data/imagenes/go.png" />
+    <img class="pikachu" src="data/imagenes/pikachu.png" />
   </header>
   <!--barra filtro-->
   <section class="nav">
     <!--Ordenar por(sort by)-->
-    <select class="tag" name="a-z" id="selectOrder">
+    <select class="sortBy" name="a-z" id="selectOrder">
       <option value="ordenado">Sort By</option>
       <option value="ascendente">A-Z</option>
       <option value="descendente">Z-A</option>
     </select>
     <!--Ordenar por Elemento (Element)-->
-    <select class="tag" name="type" id="typePokemon">
+    <select class="element" name="type" id="typePokemon">
       <option value="all" selected>Element</option>
-      <option value="grass">Grass</option>
-      <option value="electric">Electric</option>
-      <option value="dark">Dark</option>
-      <option value="fairy">Fairy</option>
-      <option value="fire">Fire</option>
-      <option value="psychic">Psychic</option>
-      <option value="steel">Steel</option>
-      <option value="dragon">Dragon</option>
-      <option value="water">Water</option>
-      <option value="fighting">Fighting</option>
-      <option value="ground">Ground</option>
-      <option value="ghost">Ghost</option>
       <option value="bug">Bug</option>
-      <option value="rock">Rock</option>
-      <option value="poison">Poison</option>
+      <option value="dark">Dark</option>
+      <option value="dragon">Dragon</option>
+      <option value="electric">Electric</option>
+      <option value="fairy">Fairy</option>
+      <option value="fighting">Fighting</option>
+      <option value="fire">Fire</option>
       <option value="flying">Flying</option>
-      <option value="ice">Ice</option> 
-      <!--Busqueda de poke por Nombre o numero-->
+      <option value="ghost">Ghost</option>
+      <option value="grass">Grass</option>
+      <option value="ground">Ground</option>
+      <option value="ice">Ice</option>
+      <option value="poison">Poison</option>
+      <option value="psychic">Psychic</option>
+      <option value="rock">Rock</option>
+      <option value="steel">Steel</option>
+      <option value="water">Water</option>
     </select>
-    <input id="input-name-pokemon" class="tag" placeholder="Number or Name" value="" autocomplete="off">
+    <!--Busqueda de poke por Nombre o numero-->
+    <input id="inputPokemon" class="search" placeholder="Number or Name" value="" autocomplete="off" />
     <!--Link para la pagina oficial (con boton)-->
+    <button class="link">
+      <a href="https://www.pokemon.com/el/" target="_blank">Official page</a>
+    </button>
   </section>
   <!--Este es la Bienvenida + donde se visualizan a los pokemons-->
   <main>
     <!--Intro o bienvenida breve-->
     <article class="welcomeIntroduccion">
-      <img class="playPokemon" src="data/imagenes/playpokemon.png">
-      <p class="intro">Welcome to the pokedex <br>
-        In this page you can find information about your favorite <br> pokemon in the Kanto and Johto region.<br>
-        ¡We invite you to explore the wonders of the pokemon world!</p>
+      <img class="playPokemon" src="data/imagenes/playpokemon.png" />
+      <p class="intro">
+        Welcome to the pokedex <br />
+        In this page you can find information about your favorite <br />
+        pokemon in the Kanto and Johto region.<br />
+        ¡We invite you to explore the wonders of the pokemon world!
+      </p>
     </article>
-    <div id="pokemonContainer" class="pokemonContainer">
-
-    </div>
+    <div id="pokemonContainer" class="pokemonContainer"></div>
   </main>
 
   <footer>
-    <p class="foo"> @2021 Pokemon.Desarrollado por Macarena Rivera y Alejandra Maureira</p>
+    <p class="foo">
+      @2021 Pokemon.Desarrollado por Macarena Rivera y Alejandra Maureira
+    </p>
   </footer>
 
   <script src="main.js" type="module"></script>
