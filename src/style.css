@@ -10,13 +10,13 @@ body {
   width: 100%;
 }
 
-
 .titleContainer {
   background: #fbc505;
   position: relative;
   display: flex;
   height: 14.4vh;
   justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 img.imageLogoPoke,
@@ -41,18 +41,21 @@ img.pikachu {
   margin-left: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.nav{
+.nav {
   height: 4.8vh;
   display: flex;
   justify-content: center;
-  background-color:#ec3e18 ;
-  } 
+  flex-wrap: nowrap;
+  background-color: #ec3e18;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
 
-.sortBy:hover, 
+.sortBy:hover,
 .element:hover,
 .search:hover,
-.link:hover{
-  background-color: rgba(255,255,255,0.50);
+.link:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .sortBy,
@@ -65,10 +68,36 @@ img.pikachu {
   font-size: 20px;
   letter-spacing: 1px;
   font-family: "Acme", sans-serif;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  border: none;
+  margin-left: 100px;
 }
 
+.sortBy {
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding-top: 2px;
+  margin-right: 5px;
+}
+
+.search {
+  width: 11.6%;
+}
+
+.iconsE {
+  margin-left: -3px;
+}
+
+.iconsPokedex {
+  margin-left: 5px;
+}
 
 .welcomeIntroduccion {
   display: flex;
@@ -158,10 +187,43 @@ footer {
   display: flex;
 }
 
+@media screen and (max-width: 930px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .sortBy,
+  .element,
+  .search,
+  .link {
+    font-size: 17px;
+    margin-left: 40px;
+  }
+
+  .sortBy {
+    margin-left: 10px;
+  }
+
+  .link {
+    margin-top: 2px;
+  }
+}
+
 @media screen and (max-width: 870px) {
   p.intro {
     font-size: 18px;
     margin-top: 20px;
+  }
+
+  .sortBy,
+  .element,
+  .search,
+  .link {
+    margin-left: 35px;
+  }
+
+  .sortBy {
+    margin-left: -20px;
   }
 }
 
@@ -175,8 +237,9 @@ footer {
 
   p.intro {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 45px;
     text-align: center;
+    margin-left: 90px;
   }
   img.playPokemon {
     display: none;
@@ -184,31 +247,42 @@ footer {
   img.imageLogoGo {
     display: none;
   }
-
-  .nav {
-    display: inline-block;
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 590px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .welcomeIntroduccion {
     height: 28vh;
     width: 100%;
   }
 
   p.intro {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 25px;
-    margin-right: -20px;
   }
 
-  .tag {
-    font-size: 15px;
+  .sortBy,
+  .element,
+  .search,
+  .link {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .iconsE,
+  .iconsPokedex,
+  .iconsS,
+  .iconsB {
+    display: none;
+  }
+
+  .link {
+    margin-top: 4px;
+  }
+
+  .search,
+  .element,
+  .sortBy {
+    margin-top: 2px;
   }
 
   .box {
