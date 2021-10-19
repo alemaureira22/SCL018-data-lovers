@@ -12,18 +12,17 @@ export const filterData = (data, searchElement) => {
 
 //funcion ordenar de la a-z y z-a
 export const pokemonOrder = (pokemons, order) => {
-  const datapoke = pokemons;
-  const orderByInicial = datapoke.sort((prev, next) => {
-    if (prev.name > next.name) {
+  const orderByInicial =pokemons.sort((a,b) => {
+    if (a.name > b.name) {
       return 1;
     }
-    if (prev.name < next.name) {
+    if (a.name < b.name) {
       return -1;
     }
-    return 0;
+    
   });
 
-  if (order === "descendente") {
+  if (order === "falling") {
     return orderByInicial.reverse();
   }
   return orderByInicial;

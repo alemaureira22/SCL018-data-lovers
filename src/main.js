@@ -6,6 +6,7 @@ import { searchId } from "./data.js";
 
 const dataPokemon = Object.values(data.pokemon);
 
+
 //variable que contiene el div en html
 const callPokeContainer = document.getElementById("pokemonContainer");
 
