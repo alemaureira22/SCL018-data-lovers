@@ -20,11 +20,12 @@
   <!--barra filtro-->
   <section class="nav">
     <!--Ordenar por(sort by)-->
-    <select class="sortBy" name="a-z" id="selectOrder">
-      <option value="ordenado">Sort By</option>
-      <option value="ascendente">A-Z</option>
-      <option value="descendente">Z-A</option>
+    <select class="sortBy" name="a-z" id="selectOrder"> 
+      <option value="order">Sort By</option>
+      <option value="upward">A-Z</option>
+      <option value="falling">Z-A</option>
     </select>
+    <img class="iconsPokedex" src="data/imagenes/icons8pokedex40.png" />
     <!--Ordenar por Elemento (Element)-->
     <select class="element" name="type" id="typePokemon">
       <option value="all" selected>Element</option>
@@ -46,12 +47,13 @@
       <option value="steel">Steel</option>
       <option value="water">Water</option>
     </select>
+    <img class="iconsE" src="data/imagenes/icons8valor40.png" />
     <!--Busqueda de poke por Nombre o numero-->
     <input id="inputPokemon" class="search" placeholder="Number or Name" value="" autocomplete="off" />
+    <img class="iconsB" src="data/imagenes/icons8busqueda40.png" />
     <!--Link para la pagina oficial (con boton)-->
-    <button class="link">
-      <a href="https://www.pokemon.com/el/" target="_blank">Official page</a>
-    </button>
+    <a class="link" href="https://www.pokemon.com/el/" target="_blank">Official Page</a>
+    <img class="iconsS" src="data/imagenes/icons8snorlax30.png" />
   </section>
   <!--Este es la Bienvenida + donde se visualizan a los pokemons-->
   <main>
