@@ -138,7 +138,7 @@ img.playPokemon {
   display: flex;
   align-items: center;
   flex-direction: column;
-  }
+}
 
 .box {
   width: 150px;
@@ -180,7 +180,7 @@ img.picture {
   color: white;
 }
 
-.containerModal{
+.containerModal {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -188,100 +188,105 @@ img.picture {
   width: 32.6vw;
   height: 94vh;
   padding: 10px;
-  z-index: 1;  
+  z-index: 1;
   display: none;
   position: fixed;
   top: 5%;
-  left: calc(50% - 32.6vw/2);  
-   
+  left: calc(50% - 32.6vw / 2);
+  min-width: 300px;
 }
 
-.modalInside{
+.modalInside {
   background-image: url("./data/imagenes/fondocarta10.png");
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.801);
   height: 100%;
+  width: 100%;
   word-wrap: break-word;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   border: 3px solid rgba(255, 255, 255, 0.747);
   padding-bottom: 0px;
   border-radius: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  
 }
 
-.close{
+.close {
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  height: 15px;
-  width: 15px;
   display: flex;
   float: right;
-  margin-right: 20px;
+  margin-top: -5px;
+  font-size: 30px;
+}
 
-  
-  }
+.close:hover {
+  color: white;
+}
 
-.textPicture{
+.textPicture {
   background-color: rgba(255, 255, 255, 0.781);
-  margin-top: -50px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
   border-radius: 10px 10px 0px 0px;
-  height: 431.5px;
+  height: 78%;
+  width: 95%;
   line-height: 15px;
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: flex-end;
+  margin-top: 110px;
+ 
 }
 
-.nameModal{
+.nameModal {
   text-align: center;
-  margin-top: 5px;
-  margin-left: -10px;
+  margin-top: -100px;
   margin-bottom: 7px;
 }
 
-.numberModal{
+.numberModal {
   position: absolute;
   margin-top: 5px;
   margin-left: 3px;
   width: 46px;
   color: rgb(196, 190, 190);
-  
 }
 
-.miniPokeball{
+.miniPokeball {
   width: 25px;
   height: 25px;
   margin-left: 5px;
 }
 
-.imgContainer{
-  margin-top: 5px;
+.imgContainer {
+  margin-top: -10px;
   width: 13.4vw;
-  height: 27.2vh;
-  margin-left: 130px;
+  height: 24.2vh;
   display: flex;
-    
+  position: absolute;
+  top: 5%;
+  left: calc(80% - 32.6vw / 2);
 }
 
-.pictureModal{
-  height: 26.2vh;
+.pictureModal {
+  height: 23.2vh;
   width: 12.4vw;
   filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.527));
-   
+  
 }
 
-.sizeTy{
- display: flex;
- border-spacing: 50px 1px;
- justify-content: center;
- align-items: center;
- text-align: center;
+.sizeTy {
+  display: flex;
+  border-spacing: 50px 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.tableModal{
+.tableModal {
   background-color: rgba(0, 0, 255, 0.493);
   margin: 15px;
   text-align: center;
@@ -290,31 +295,28 @@ img.picture {
 }
 
 .stables,
-.typesS{
- padding: 5px;
- background-color: rgba(255, 255, 255, 0.527);
+.typesS {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.527);
 }
 
-
-hr{
+hr {
   width: 75%;
   color: rgb(37, 37, 37);
-  
-  
 }
 
-.titles{
+.titles {
   font-weight: bold;
 }
 
-.aboutModal{
+.aboutModal {
   margin-top: -13px;
 }
 
 .aboutModal,
 .resistantModal,
 .weaknessesModal,
-.titles{
+.titles {
   margin-left: 5px;
 }
 
@@ -332,6 +334,7 @@ footer {
 @media screen and (max-width: 930px) {
   body {
     overflow-x: hidden;
+    font-size: 15px;
   }
 
   .sortBy,
@@ -352,6 +355,11 @@ footer {
 }
 
 @media screen and (max-width: 870px) {
+
+  body{
+    font-size: 13px;
+  }
+
   p.intro {
     font-size: 18px;
     margin-top: 20px;
@@ -367,6 +375,19 @@ footer {
   .sortBy {
     margin-left: -20px;
   }
+  .imgContainer {
+    width: 169.3px;
+    height: 138.7px;
+    left: 25%;
+  }
+  
+  .pictureModal {
+    height: 132.5px;
+    width: 155.7px;
+        
+  }
+
+
 }
 
 @media screen and (max-width: 691px) {
@@ -388,6 +409,21 @@ footer {
   }
   img.imageLogoGo {
     display: none;
+  }
+
+  .containerModal{
+    left: 23%;
+  }
+
+  .imgContainer {
+    width: 169.3px;
+    height: 138.7px;
+  }
+  
+  .pictureModal {
+    height: 132.5px;
+    width: 155.7px;
+        
   }
 }
 
@@ -442,5 +478,16 @@ footer {
   .card-title {
     font-size: 18px;
     margin-left: -25px;
+  }
+
+  .imgContainer {
+    width: 169.3px;
+    height: 138.7px;
+  }
+  
+  .pictureModal {
+    height: 132.5px;
+    width: 155.7px;
+        
   }
 }
