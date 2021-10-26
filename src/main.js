@@ -10,14 +10,13 @@ const dataPokemon = Object.values(data.pokemon);
 //variable que contiene el div en html
 const callPokeContainer = document.getElementById("pokemonContainer");
 
-
 //Impresion de Pantilla para mostrar todos los pokemons
 const pokeList = (data) => {
   let listPoke = "";
   for (let i = 0; i < data.length; i++) {
     listPoke += ` 
     <div class="pokemonBox">
-         <button id="${data[i].name}" class="box"  >
+         <button id="${data[i].num}" class="box"  >
          <p class= "numberBox">N° ${data[i].num}</p>
          <p> <img  class="picture" src=" ${data[i].img}"> </p>
         </button>
@@ -27,18 +26,18 @@ const pokeList = (data) => {
     </div>  
     
     
-    <div class="containerModal"  id="${data[i].name}">
+    <div class="containerModal"  id="k-${data[i].num}">
       <div class="modalInside">
-       <button class="close" id="x"> <img src="data/imagenes/icons8xbox.png" /></button>
+      <span class="close" id="close">&times;</span>
         <p class= "numberModal">N°${data[i].num}</p>
         <div class="imgContainer"><img  class="pictureModal" src=" ${
           data[i].img
         }"> </div>
         <div class="textPicture">
-        <h2 class="nameModal"> ${
-          data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1)
-        } <img class="miniPokeball" src="data/imagenes/icons8pokeball.png" /> </h2>
-        <table class="sizeTy">
+          <h2 class="nameModal"> ${
+            data[i].name.charAt(0).toUpperCase() + data[i].name.slice(1)
+          } <img class="miniPokeball" src="data/imagenes/icons8pokeball.png" /> </h2>
+          <table class="sizeTy">
            <tr>
            <hr/>
             <th>Types</th> 
@@ -75,6 +74,7 @@ const pokeList = (data) => {
            </tr>
           </table>
         
+      
        </div>
 
       </div>
@@ -86,20 +86,23 @@ const pokeList = (data) => {
 //Funcion que despliega el modal
 function addEvents() {
   const btnBoxes = document.querySelectorAll(".box");
-  btnBoxes.forEach((element)=>{
-    const currentId = element.getAttribute("id")
-    element.addEventListener("click", ()=>{
-      const modal = document.querySelector(`.containerModal#${currentId}`)
-      modal.style.display="block"
-    })
-
-  })
+  btnBoxes.forEach((element) => {
+    const currentId = "k-" + element.getAttribute("id");
+    element.addEventListener("click", () => {
+      const modal = document.querySelector(`.containerModal#${currentId}`);
+      modal.style.display = "block";
+      let buttonCloser = document.querySelectorAll(".close");
+      buttonCloser.forEach((element) => {
+        element.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+      });
+    });
+  });
 }
-
 
 pokeList(dataPokemon);
 addEvents();
-
 
 //Funcion de filter
 let opcionElement = document.getElementById("typePokemon");
