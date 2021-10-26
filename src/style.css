@@ -80,6 +80,8 @@ img.pikachu {
 
 ::placeholder {
   color: white;
+  border: 2px solid rgba(231, 223, 223, 0.384);
+  text-align: center;
 }
 
 .link {
@@ -91,6 +93,7 @@ img.pikachu {
 
 .search {
   width: 11.6%;
+  
 }
 
 .iconsE {
@@ -167,7 +170,19 @@ img.picture {
   width: 100px;
   height: 100px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
 }
+img.picture:hover{
+  transform: rotate(-20deg);
+  
+  
+}
+.box:hover{
+  background-color:rgba(255, 255, 255, 0.185);
+  cursor: pointer;
+
+}
+
 
 .card-title {
   width: 95px;
@@ -217,8 +232,9 @@ img.picture {
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   float: right;
-  margin-top: -5px;
-  font-size: 30px;
+  margin-top: -12px;
+  font-size: 38px;
+  cursor: pointer;
 }
 
 .close:hover {
@@ -253,6 +269,7 @@ img.picture {
   margin-left: 3px;
   width: 46px;
   color: rgb(196, 190, 190);
+  font-size: 17px;
 }
 
 .miniPokeball {
@@ -310,14 +327,15 @@ hr {
 }
 
 .aboutModal {
-  margin-top: -13px;
+  margin-top: -11px;
 }
 
 .aboutModal,
 .resistantModal,
 .weaknessesModal,
 .titles {
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
